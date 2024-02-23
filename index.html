@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="favicon" href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="16x16">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="고려대학교 합격자 조회"/> 
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="고려대학교 합격자 조회"/> 
+    <meta property="og:description" content="원하는 학과로 고려대학교에서!"/> 
+    <title>고려대학교 합격자 조회</title>
+    <style>
+        body{overflow: hidden;}
+        .main{position: absolute; height: 100%; width: 100%; top:0px; left:0px;background-image: url('background.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;}
+        #title_0{position: absolute; left: 50%; top: 140px; width: 30px; height: 52px; transform: translate(-50%,-50%);}
+        #title1{position: absolute; left: -80px; top: 0px; width: auto; height: 47px;}
+        #title_1{position: absolute; top: 280px; left: 50%; transform: translate(-50%,-50%); width: 350px; font-size: 20px; font-weight: bold; color: #7C0019;}
+        #title_2{position: absolute; top: 330px; left: 50%; transform: translate(-50%,-50%); width: 225px; font-size: 25px; font-weight: bold; color: #7C0019;}
+
+        #button{position: absolute; top: 480px; left: 50%; transform: translate(-50%,-50%); width: 300px;}
+        #sorry{position: relative; z-index: 98; width: 300px; top: 150px; left: 50%; transform: translate(-50%);}
+        #youruniv{position: relative; z-index: 100; width: 400px; top: 150px; left: 50%; transform: translate(-50%);}
+
+
+        #susi_btn{position: absolute; top:-80px; left: 34px; width: 300px;}
+        #susi_btn1{position: absolute; width: 230px; height: 80px; background-color: #964757; border: none;}
+        #btn_ment1{position: absolute; top: 13px; left: 17px; font-size: 20px; font-weight: bold;color: #E9E4E4;}
+        #btn_ment1_1{position: absolute; top: 40px; left: 18px; font-size: 12px; font-weight:normal;color: #E9E4E4;}
+        #btn_ment1_2{position: absolute; top: 57px; left: 18px; font-size: 12px; font-weight: normal;color: #E9E4E4;}
+        #btn_ment1_3{position: absolute; top: 130px; left: 40px; font-size:0px; font-weight: bold;color: #E9E4E4;}
+        #point1{position: absolute; top: 27px; left: 190px; height: 30px;}
+        #point2{position: absolute; top: 27px; left: 205px; height: 30px;}
+
+        #jungsi_btn{position: absolute; top: 50px; left: 34px; width: 300px;}
+        #jungsi_btn1{position: absolute; width: 230px; height: 80px; background-color: #E2C790; border: none;}
+        #btn_ment2{position: absolute; top: 13px; left: 17px; font-size: 20px; font-weight: bold;color: #484848;}
+        #btn_ment2_1{position: absolute; top: 40px; left: 18px; font-size: 12px; font-weight:normal;color: #484848;}
+        #btn_ment2_2{position: absolute; top: 57px; left: 18px; font-size: 12px; font-weight: normal;color: #484848;}
+        #btn_ment2_3{position: absolute; top: 130px; left: 40px; font-size:0px; font-weight: bold;color: #484848;}
+        #point3{position: absolute; top: 27px; left: 190px; height: 30px;}
+        #point4{position: absolute; top: 27px; left: 205px; height: 30px;}
+
+        @media screen and (min-width: 650px){
+        body{overflow: hidden;}
+        .main{position: absolute; height: 100%; width: 100%; top:0px; left:0px;background-image: url('background.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;}
+        #title_0{position: absolute; left: 50%; top: 140px; width: 80px; height: 52px; transform: translate(-50%,-50%);}
+        #title1{position: absolute; left: -80px; top: 0px; width: auto; height: 58px;}
+
+        #title_1{position: absolute; top: 280px; left: 50%; transform: translate(-50%,-50%); width:590px; font-size: 34px; font-weight: bold; color: #7C0019;}
+        #title_2{position: absolute; top: 345px; left: 50%; transform: translate(-50%,-50%); width: 330px; font-size: 38px; font-weight: bold; color: #7C0019;}
+
+        #button{position: absolute; top: 450px; left: 50%; transform: translate(-50%,-50%); width: 300px;}
+        #sorry{position: relative; z-index: 98; width: 400px; top: 150px; left: 50%; transform: translate(-50%);}
+        #youruniv{position: absolute; z-index: 99; width: 500px; top: 400px; left: 50%; transform: translate(-50%);}
+
+        #susi_btn{position: absolute; top: 10px; left: -170px; width: 300px;}
+        #susi_btn1{position: absolute; width: 260px; height: 174px; background-color: #964757; border: none;}
+        #btn_ment1{position: absolute; top: 20px; left: 83px; font-size: 25px; font-weight: bold;color: #E9E4E4;}
+        #btn_ment1_1{position: absolute; top: 65px; left: 70px; font-size: 16px; font-weight:normal;color: #E9E4E4;}
+        #btn_ment1_2{position: absolute; top: 85px; left: 75px; font-size: 16px; font-weight: normal;color: #E9E4E4;}
+        #btn_ment1_3{position: absolute; top: 130px; left: 55px; font-size: 21px; font-weight: bold;color: #E9E4E4;}
+        #point1{position: absolute; top: 65px; left: 205px; height: 35px;}
+        #point2{position: absolute; top: 65px; left: 220px; height: 35px;}
+
+        #jungsi_btn{position: absolute; top: 10px; left: 220px; width: 300px;}
+        #jungsi_btn1{position: absolute; width: 260px; height: 174px; background-color: #E2C790; border: none;}
+        #btn_ment2{position: absolute; top: 20px; left: 83px; font-size: 25px; font-weight: bold;color: #484848;}
+        #btn_ment2_1{position: absolute; top: 65px; left: 70px; font-size: 16px; font-weight:normal;color: #484848;}
+        #btn_ment2_2{position: absolute; top: 85px; left: 75px; font-size: 16px; font-weight: normal;color: #484848;}
+        #btn_ment2_3{position: absolute; top: 130px; left: 55px; font-size: 21px; font-weight: bold;color: #484848;}
+        #point3{position: absolute; top: 65px; left: 205px; height: 35px;}
+        #point4{position: absolute; top: 65px; left: 220px; height: 35px;}}
+        
+    </style>
+</head>
+<img id="sorry" src="sorry2.png">
+<a href="https://dokdokorean.github.io/your_university/"><img id="youruniv" src="your_univ.png" ></a>
+
+<body>
+    <div class="main">
+        <div id="title_0">
+            <img id="title1" src="korea_logo.png">
+
+        </div>
+        <a id="title_1">2024학년도 고려대학교 입학전형 일정 안내</a>
+        <a id="title_2">신입생 모집 결과 발표</a>
+        <div id="button">
+            <div id="susi_btn" style="cursor: default;">
+                <button id="susi_btn1" ></button>
+                <a id="btn_ment1">수시모집</a>
+                <a id="btn_ment1_1">최종합격자 발표 및</a>
+                <a id="btn_ment1_2">합격확인서 출력</a>
+                <a id="btn_ment1_3">결과발표 바로가기</a>
+                <img id="point1" src="point.png">
+                <img id="point2" src="point.png">
+            </div>
+            <div id="jungsi_btn" style="cursor: default;">
+                <button id="jungsi_btn1"></button>
+                <a id="btn_ment2">정시모집</a>
+                <a id="btn_ment2_1">최종합격자 발표 및</a>
+                <a id="btn_ment2_2">합격확인서 출력</a>
+                <a id="btn_ment2_3">결과발표 바로가기</a>
+                <img id="point3" src="point.png">
+                <img id="point4" src="point.png">
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

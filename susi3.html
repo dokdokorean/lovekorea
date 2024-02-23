@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>합격허가통지서</title>
+    <style>
+        #susi3{width: auto; height: 700px;}
+        #susi4{width: 494px; height: auto;}
+        #num2{position: absolute; top: 267px; left: 148px; font-size: 13px; font-weight: bold;}
+        #birth2{position: absolute; top: 302px; left: 148px; font-size: 13px; font-weight: bold;}
+        #name2{position: absolute; top: 335px; left: 148px; font-size: 13px; font-weight: bold;}
+        #dpt2{position: absolute; top: 202px; left: 148px; font-size: 13px; font-weight: bold;}
+        #ad2{position: absolute; top: 233px; left: 148px; font-size: 13px; font-weight: bold;}
+
+    </style>
+</head>
+<body>
+    <div id="susi3">
+        <img src="susi3.png" id="susi4">
+        <a id="num2"></a>
+        <a id="birth2"></a>
+        <a id="name2"></a>
+        <a id="dpt2"></a>
+        <a id="ad2"></a>
+    </div>
+    <script>
+        window.onload=function(){
+            if(localStorage.getItem('num_1')){
+            var num = localStorage.getItem('num_1')}
+            document.getElementById('num2').innerText=num;
+
+            if(localStorage.getItem('birth_1')){
+            var birth = localStorage.getItem('birth_1')}
+            document.getElementById('birth2').innerText=birth;
+
+            if(localStorage.getItem('name_1')){
+            var name = localStorage.getItem('name_1')}
+            document.getElementById('name2').innerText=name;
+
+            if(localStorage.getItem('dpt_1')){
+            var dpt = localStorage.getItem('dpt_1')}
+            document.getElementById('dpt2').innerText=dpt;
+
+            if(localStorage.getItem('ad_1')){
+            var ad = localStorage.getItem('ad_1')}
+            document.getElementById('ad2').innerText=ad;
+
+        }
+    </script>
+</body>
+</html>

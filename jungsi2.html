@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정시모집 합격자 조회</title>
+    <style>
+        body{background:linear-gradient(#EBDCBE,#fff); height: 1300px; }
+        #hap1{position: absolute; top: 205px; left: 50%; font-size: 25px; transform: translate(-50%);}
+         #rec_main{position: absolute; left:0px; top:0px; width: 750px; height:0px;}
+         #susi2_1{position: absolute; top: 70px;left: 0px; width: 750px; height: auto;}
+         #num1{position: absolute; top: 758px; left: 260px; font-size: 15px;}
+         #name1{position: absolute; top: 798px; left: 260px; font-size: 15px;}
+         #dpt1{position: absolute; top: 880px; left: 260px; font-size: 15px;}
+         #ad1{position: absolute; top: 840px; left: 260px; font-size: 15px; }
+         #birth1{position: absolute; top: 922px; left: 260px; font-size: 15px; }
+         #hap{position: absolute; top: 962px; left: 260px; font-size: 16px; color: red;}
+         #final{position: absolute; top: 1160px; left: 50%; transform: translate(-50%); background-color: #FFFAF0;border: none; border-radius: 0px; color: #454545;width: 190px; height: 40px;}
+         #warning{position: absolute; top: 1117px; left: 50%; transform: translate(-50%);color: #964757; font-size: 10px;}
+         #copyright{position: absolute; top: 1257px; left: 50%; transform: translate(-50%);color: #964757; font-size: 10px;}
+
+
+         @media screen and (min-width: 750px){
+        body{background:linear-gradient(#EBDCBE,#fff); height: 1300px;}
+        #hap1{position: absolute; top: 205px; left: 50%; font-size: 25px; transform: translate(-50%);}
+         #rec_main{position: absolute; left: 50%; top:0px;transform: translate(-50%); width: 750px; height:0px;}
+         #susi2_1{position: absolute; top: 70px;left: 0px; width: 750px; height: auto;}
+         #num1{position: absolute; top: 758px; left: 260px; font-size: 15px;}
+         #name1{position: absolute; top: 798px; left: 260px; font-size: 15px;}
+         #dpt1{position: absolute; top: 880px; left: 260px; font-size: 15px;}
+         #ad1{position: absolute; top: 840px; left: 260px; font-size: 15px; }
+         #birth1{position: absolute; top: 922px; left: 260px; font-size: 15px; }
+         #hap{position: absolute; top: 962px; left: 260px; font-size: 16px; font-weight: bold; color: red;}
+         #final{position: absolute; top: 1160px; left: 50%; transform: translate(-50%); background-color: #FFFAF0;border: none; border-radius: 0px; color: #454545;width: 190px; height: 40px;}
+         #warning{position: absolute; top: 1117px; left: 50%; transform: translate(-50%);color: #964757; font-size: 10px;}
+         #copyright{position: absolute; top: 1257px; left: 50%; transform: translate(-50%);color: #964757; font-size: 10px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="rec_main">
+        <img id="susi2_1" src="jungsi2_1.png">
+        <a id="hap1"></a>
+        <a id="num1"></a>
+        <a id="name1"></a>
+        <a id="dpt1"></a>
+        <a id="ad1"></a>
+        <a id="birth1"></a>
+        <a id="hap">합격</a>
+        <a id="warning">사용자의 착오 및 불법행위에 대한 책임은 사용자에게 있음을 명시합니다.</a>
+        <a id="copyright">COPYRIGHT 2023 METAPEOPLE ALL RIGHTS RESERVED</a>
+
+        <button id="final" onclick="window.open('susi3.html')">입학허가통지서 확인</button>
+    </div>
+    <script>
+        window.onload=function(){
+            
+
+            if(localStorage.getItem('num_1')){
+            var num = localStorage.getItem('num_1')}
+            document.getElementById('num1').innerText=num
+
+            if(localStorage.getItem('birth_1')){
+            var birth = localStorage.getItem('birth_1')}
+            document.getElementById('birth1').innerText=birth
+
+
+            if(localStorage.getItem('name_1')){
+            var name = localStorage.getItem('name_1')}
+            document.getElementById('name1').innerText=name
+            
+            document.getElementById('hap1').innerText=name+'님의 합격을 축하합니다.'
+
+            if(localStorage.getItem('dpt_1')){
+            var dpt = localStorage.getItem('dpt_1')}
+            document.getElementById('dpt1').innerText=dpt;
+
+            if(localStorage.getItem('ad_1')){
+            var ad = localStorage.getItem('ad_1')}
+            document.getElementById('ad1').innerText=ad;
+        }
+    </script>
+</body>
+</html>
